@@ -9,7 +9,7 @@ Dir["./app/services/**/*.rb"].each {|file| require file }
  
 class App < Sinatra::Base
  
-  get '/' do
+  get '/sinatra' do
     'Hello world!'   
   end
  
