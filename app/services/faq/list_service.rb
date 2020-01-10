@@ -20,13 +20,13 @@ module FaqModule
           faqs = Faq.all
         end
    
-        response = "<h5>Perguntas e Respostas</h5> \n\n"
+        response = "Perguntas e Respostas \n\n"
         faqs.each do |f|
           response += "#{f.id} - "
-          response += "<b>#{f.question}</b>\n"
-          response += "<b>#{f.answer}</b> \n"
+          response += "#{f.question}\n"
+          response += "#{f.answer} \n"
           f.hashtags.each do |h|
-            response += "<i>##{h.name}</i> "
+            response += "##{h.name} "
           end
           response += "\n\n"
         end
