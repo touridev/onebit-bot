@@ -6,8 +6,9 @@ module FaqModule
       end
   
       def call
-        faq = Faq.where(id: @id).last
-        return "Questão inválida, verifique o Id" if faq != nil
+        faq = Faq.where(id: @id)
+        
+        return "Questão inválida, verifique o Id" if faq == nil
         
         Faq.transaction do
           # Deleta as tags associadas que não estejam associadas a outros faqs
