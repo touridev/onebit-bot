@@ -1,15 +1,17 @@
 require_relative './../../spec_helper.rb'
 
 describe FaqModule::TranslateService do
+    before do
+        @sentence = "Olá"
+    end
+
     describe "#call" do
         context "Valid sentence" do
-            before do
-                @sentence = FFaker::Lorem.sentence
-            end
-
             it "Return translated sentence" do
-                response = @translateService.call({"sentence" => @sentence})
-                expect(response).to match("Texto traduzido com sucesso!")
+                @translateService = FaqModule::TranslateService.new({"sentence" => @sentence})
+                response = @translateService.call()
+                
+                expect(response).to match("Hi")
             end
         end
 

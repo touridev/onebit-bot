@@ -14,10 +14,7 @@ gem "factory_bot"
 gem "ffaker"
 gem 'database_cleaner'
 
-# Gem para tradução de frases
-gem 'yandex-translator'
 
- 
 group :test do
   gem "rack-test", require: "rack/test"
   gem "rspec"
