@@ -7,10 +7,10 @@ class InterpretService
         FaqModule::CreateService.new(params).call()
       when "remove"
         FaqModule::RemoveService.new(params).call()
+      when "translate"
+        FaqModule::TranslateService.new(params).call()
       when "help"
         HelpService.call()
-      when "translate"
-        TranslateService.call()
       else
         "Não compreendi o seu desejo"
       end

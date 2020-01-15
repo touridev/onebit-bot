@@ -8,8 +8,6 @@ describe FaqModule::TranslateService do
     describe "#call" do
         context "Valid sentence" do
             it "Return translated sentence" do
-                @translateService = FaqModule::TranslateService.new({"sentence" => @sentence})
-                response = @translateService.call()
                 
                 expect(response).to match("Hi")
             end
