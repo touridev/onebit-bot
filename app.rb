@@ -1,8 +1,10 @@
 require 'json'
 require 'sinatra'
 require 'sinatra/activerecord'
- 
+require 'rest-client'
 require './config/database'
+
+require 'dotenv/load'
  
 Dir["./app/models/*.rb"].each {|file| require file }
 Dir["./app/services/**/*.rb"].each {|file| require file }

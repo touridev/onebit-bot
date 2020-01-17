@@ -18,6 +18,9 @@ gem 'database_cleaner'
 gem 'rest-client'
 gem 'webmock'
 
+# Guardando a Key da API
+gem 'dotenv'
+
 group :test do
   gem "rack-test", require: "rack/test"
   gem "rspec"

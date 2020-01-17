@@ -1,5 +1,5 @@
-# require 'rest-client'
-# require 'json'
+require 'dotenv'
+Dotenv.load('keys.env')
 
 module FaqModule
     class TranslateService
@@ -10,13 +10,12 @@ module FaqModule
         def call
             return "Não foi possível realizar a tradução. Verifique a ortografia da frase!" if @sentence == nil
             
-            # base_url = "https://translate.yandex.net/api/v1.5/tr.json/detect
-            # ? key=<trnsl.1.1.20200112T230230Z.34956b8259078003.a7ae2acf5ff567b79d26659bc65d2b72ff05acc6>
-            # & text=<#{@sentence}>"
-            
-            
-            response = "https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20200112T230230Z.34956b8259078003.a7ae2acf5ff567b79d26659bc65d2b72ff05acc6&text=#{@sentence}&lang=pt-en"
-            request = RestClient.get response
+            # Pegando a chave do keys.env
+            yandex_key = ENV["YANDEX_API_KEY"]
+            yandex_url = ENV["YANDEX_API_URL"]
+
+            url = "#{yandex_url}?key=#{yandex_key}&text=#{@sentence}&lang=pt-en"
+            request = RestClient.get url
             value = JSON.parse(request.body)["text"][0]
             return "#{value}"
         end
