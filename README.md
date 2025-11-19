@@ -1,4 +1,4 @@
-## onebit-bot 
+## OneBit Bot
 This application is a chatbot developed in the OneBitCode bootcamp course.
 
 ## Technology 
@@ -58,7 +58,7 @@ The application do activities like;
 
   - Repository: https://github.com/touridev/onebit-bot
     - In case of sensitive bugs like security vulnerabilities, please contact
-      Lucassiqueiraferandes07@gmail.com directly instead of using issue tracker. We value your effort
+      ftorjob@gmail.com directly instead of using issue tracker. We value your effort
       to improve the security and privacy of this project!
 
   ## Versioning
