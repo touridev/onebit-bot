@@ -1,4 +1,4 @@
-## OneBitBot 
+## onebit-bot 
 This application is a chatbot developed in the OneBitCode bootcamp course.
 
 ## Technology 
@@ -38,9 +38,9 @@ Here are the technologies used in this project.
 
 * Create and configure a DialogFlow API.
 
-* Synchronize your API with the OneBitBot.
+* Synchronize your API with the onebit-bot.
 
-* Enable your API's app that the OneBitBot will be used.
+* Enable your API's app that the onebit-bot will be used.
 
 * Thats It!
 
@@ -56,7 +56,7 @@ The application do activities like;
 
 ## Links
 
-  - Repository: https://github.com/Lucasdfg07/Onebitbot
+  - Repository: https://github.com/touridev/onebit-bot
     - In case of sensitive bugs like security vulnerabilities, please contact
       Lucassiqueiraferandes07@gmail.com directly instead of using issue tracker. We value your effort
       to improve the security and privacy of this project!
@@ -66,9 +66,5 @@ The application do activities like;
   1.0.0.0
 
 
-  ## Authors
-
-  * **Lucas Siqueira Fernandes** 
-
-  Please follow github and join us!
+  Please follow github and join me!
   Thanks to visiting me and good coding!
